@@ -13,8 +13,5 @@ module.exports = defineConfig({
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",
     }
   },
-  plugins: [
-   "@medusajs/admin",
-   "@medusajs/admin-bundler",
-  ]
+  plugins: []
 })
