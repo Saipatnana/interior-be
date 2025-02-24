@@ -12,5 +12,9 @@ module.exports = defineConfig({
       jwtSecret: process.env.JWT_SECRET || "supersecret",
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",
     }
-  }
+  },
+  plugins: [
+   "@medusajs/admin",
+   "@medusajs/admin-bundler",
+  ]
 })
