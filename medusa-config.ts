@@ -13,5 +13,15 @@ module.exports = defineConfig({
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",
     }
   },
-  plugins: []
+  plugins: [
+    {
+      resolve: "@medusajs/admin",
+      options: {
+        // Try one of these options to tell Medusa where your admin build is:
+        adminPath: ".medusa/server/public/admin",
+        // or
+        // outDir: ".medusa/server/public/admin",
+      },
+    },
+  ],
 })
